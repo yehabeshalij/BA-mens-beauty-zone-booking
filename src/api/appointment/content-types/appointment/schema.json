@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "appointments",
+  "info": {
+    "singularName": "appointment",
+    "pluralName": "appointments",
+    "displayName": "Appointment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "UserName": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Time": {
+      "type": "string",
+      "required": true
+    },
+    "Note": {
+      "type": "richtext",
+      "required": true
+    },
+    "stylist": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::stylist.stylist"
+    },
+    "Pickdate": {
+      "type": "datetime",
+      "required": true,
+      "unique": false,
+      "default": "2024-05-20T21:00:44.193Z"
+    },
+    "CustomerName": {
+      "type": "string",
+      "required": true
+    },
+    "Phone": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

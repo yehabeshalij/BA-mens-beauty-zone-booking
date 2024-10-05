@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "catagoriews",
+  "info": {
+    "singularName": "catagoriew",
+    "pluralName": "catagoriews",
+    "displayName": "catagoriew",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "weddings": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::wedding.wedding",
+      "inversedBy": "catagoriews"
+    }
+  }
+}

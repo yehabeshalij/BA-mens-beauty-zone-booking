@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "decorappointments",
+  "info": {
+    "singularName": "decorappointment",
+    "pluralName": "decorappointments",
+    "displayName": "Decorappointment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "UserName": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "Email": {
+      "type": "email",
+      "required": true,
+      "unique": false
+    },
+    "Note": {
+      "type": "richtext",
+      "required": true
+    },
+    "Pickdate": {
+      "type": "datetime",
+      "required": true,
+      "unique": false,
+      "default": "2024-05-26T21:00:16.167Z"
+    },
+    "CustomerName": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "Phone": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    }
+  }
+}

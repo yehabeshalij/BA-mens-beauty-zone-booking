@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "image2s",
+  "info": {
+    "singularName": "image2",
+    "pluralName": "image2s",
+    "displayName": "Image2"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
